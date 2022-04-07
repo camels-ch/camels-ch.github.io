@@ -64,3 +64,25 @@ The purpose of this guide is to describe the creation of the CAMELS-CH dataset i
 
 
 ## CAMELS_CH_humaninfluence_attributes
+
+**Attributes**: num_reservoir, reservoir_cap, reservoir_he, reservoir_fs, reservoir_irr, reservoir_nousedata, reservoir_year_first, reservoir_year_last
+
+* num_reservoir: number of reservoirs in catchment
+* reservoir_cap: total reservoir storage capacity within a catchment in ML
+* reservoir_he: percentage of total reservoir storage in catchment used for hydroelectricty production
+* reservoir_fs: percentage of total reservoir storage in catchment used for flood storage
+* reservoir_irr: percentage of total reservoir storage in catchment for irrigation
+* reservoir_nousedata: percentage of total reservoir storage where no use data were available
+* reservoir_year_first: year the first reservoir in the catchment was built
+* reservoir_year_last: year the last reservoir in the catchment was built 
+
+**Source data**:
+* Reservoir information from the Swiss Federal Office of Energy SFOE. For more details see: https://www.bfe.admin.ch/bfe/de/home/versorgung/statistik-und-geodaten/geoinformation/geodaten/wasser/stauanlagen-unter-bundesaufsicht.html. 
+
+**Code used**: extract/camels_ch_reservoirs.R
+
+**Instructions**:
+1. Get reservoir data from SFOE
+2. Use code provided in camels_ch_reservoirs.R to compute the different attributes
+3. Detailed descriptions of how the different attributes are computed are provided in camels_ch_reservoirs.R
+
