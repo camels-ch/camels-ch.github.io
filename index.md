@@ -59,7 +59,7 @@ The purpose of this guide is to describe the creation of the CAMELS-CH dataset i
 
 ## CAMELS_CH_hydrogeology_attributes
 
-**Attributes**: hygeol_unconsol_coarse_perc, hygeol_unconsol_medium_perc, hygeol_unconsol_fine_perc, hygeol_unconsol_imperm_perc, hygeol_karst_perc, hygeol_hardrock_perc, hygeol_hardrock_imperm_perc, hygeol_water_perc
+**Attributes**: hygeol_unconsol_coarse_perc, hygeol_unconsol_medium_perc, hygeol_unconsol_fine_perc, hygeol_unconsol_imperm_perc, hygeol_karst_perc, hygeol_hardrock_perc, hygeol_hardrock_imperm_perc, hygeol_water_perc, hygeol_external_perc
 
 * hygeol_unconsol_coarse_perc: unconsolidated 1 (well-permeable gravel in valley bottoms)
 * hygeol_unconsol_medium_perc: unconsolidated 2 (permeable gravel outside of valley bottoms, sandy gravel, medium- to coarse-grained gravel)
@@ -72,14 +72,13 @@ The purpose of this guide is to describe the creation of the CAMELS-CH dataset i
 * hygeol_external_perc: external (not defined, or outside of original map source)
 
 **Source data**:
-* Hydrogeologische Karte der Schweiz: Grundwasservorkommen 1:500000 (
-https://data.geo.admin.ch/ch.swisstopo.geologie-hydrogeologische_karte-grundwasservorkommen, accessed 18.03.2022), reclassified according to Viviroli (2007) [https://boris.unibe.ch/165989/] and Viviroli et al. (2009) [https://dx.doi.org/10.1016/j.jhydrol.2009.08.022]
+* [Hydrogeologische Karte der Schweiz: Grundwasservorkommen 1:500000](https://data.geo.admin.ch/ch.swisstopo.geologie-hydrogeologische_karte-grundwasservorkommen), reclassified according to [Viviroli (2007)](https://boris.unibe.ch/165989) and [Viviroli et al. (2009)](https://dx.doi.org/10.1016/j.jhydrol.2009.08.022)
 
 **Code used**: extract/hydrogeol_reclass.py
 
 **Instructions**:
-1. Get source data from data.geo.admin.ch
-2. From source data use layer "PY_Basis_Flaechen", the relevant field is "H2_ID"
+1. Get source data from data.geo.admin.ch (last accessed 18.03.2022)
+2. From source data use layer "PY_Basis_Flaechen" and there field "H2_ID"
 3. Open ArcMap field calculator. Chose Python as parser and activate "show codeblock"
 4. Paste contents of hydrogeol_reclass.py into field calculator's pre-logic script code window (use this for the numeric field ID1)
 5. Fill in field calculator's expression box (for both ID1 and ID2) with "calc(!H2_ID!)" (without quote marks)
