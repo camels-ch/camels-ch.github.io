@@ -2,6 +2,22 @@
 
 The purpose of this guide is to describe the creation of the CAMELS-CH dataset in order to facilitate its future updating.
 
+## Table of Contents
+
+<!-- TOC start -->
+- [Conventions on file content](#conventions-on-file-content)
+- [CAMELS_CH_topographic_attributes](#camels_ch_topographic_attributes)
+  * [Gauge data](#gauge-data)
+  * [Catchment properties](#catchment-properties)
+- [CAMELS_CH_climatic_attributes](#camels_ch_climatic_attributes)
+- [CAMELS_CH_hydrologic_attributes](#camels_ch_hydrologic_attributes)
+  * [Hydrologic Signatures](#hydrologic-signatures)
+- [CAMELS_CH_landcover_attributes](#camels_ch_landcover_attributes)
+- [CAMELS_CH_soil_attributes](#camels_ch_soil_attributes)
+- [CAMELS_CH_hydrogeology_attributes](#camels_ch_hydrogeology_attributes)
+- [CAMELS_CH_hydrometry_attributes](#camels_ch_hydrometry_attributes)
+- [CAMELS_CH_humaninfluence_attributes](#camels_ch_humaninfluence_attributes)
+<!-- TOC end -->
 
 ## Conventions on file content
 
@@ -12,6 +28,8 @@ The following conventions have been defined for the resulting files:
 * Separators to use are semicolon (;)
 * Avoid using any coma in the text (use hyphen if needed)
 * No quote (") for the text
+
+## Example2
 
 ## CAMELS_CH_topographic_attributes
 
