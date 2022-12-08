@@ -3,6 +3,16 @@
 The purpose of this guide is to describe the creation of the CAMELS-CH dataset in order to facilitate its future updating.
 
 
+## Conventions on file content
+
+The following conventions have been defined for the resulting files:
+
+* Missing data are tagged as: NA
+* Precision for real data: by default two decimal places
+* Separators to use are semicolon (;)
+* Avoid using any coma in the text (use hyphen if needed)
+* No quote (") for the text
+
 ## CAMELS_CH_topographic_attributes
 
 ### Gauge data
