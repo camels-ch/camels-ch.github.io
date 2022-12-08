@@ -23,11 +23,12 @@ The purpose of this guide is to describe the creation of the CAMELS-CH dataset i
 
 The following conventions have been defined for the resulting files:
 
+* The first column contains the catchment id
 * Missing data are tagged as: NA
-* Precision for real data: by default two decimal places
+* Precision for real data: by default two decimal places. Higher precision can be used when needed.
 * Separators to use are semicolon (;)
 * Avoid using any coma in the text (use hyphen if needed)
-* No quote (") for the text
+* No quote (") even for the text
 
 ## CAMELS_CH_topographic_attributes
 
