@@ -29,6 +29,9 @@ The following conventions have been defined for the resulting files:
 * Separators to use are semicolon (;)
 * Avoid using any coma in the text (use hyphen if needed)
 * No quote (") even for the text
+* Timestamp: YYYY-MM-DD
+* Encoding: UTF-8
+* End of line: Unix (LF)
 
 ## CAMELS_CH_topographic_attributes
 
