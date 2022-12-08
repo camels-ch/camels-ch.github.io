@@ -29,8 +29,6 @@ The following conventions have been defined for the resulting files:
 * Avoid using any coma in the text (use hyphen if needed)
 * No quote (") for the text
 
-## Example2
-
 ## CAMELS_CH_topographic_attributes
 
 ### Gauge data
