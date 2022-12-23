@@ -83,6 +83,12 @@ The following conventions have been defined for the resulting files:
 
 ## CAMELS_CH_landcover_attributes
 
+**Attributes**:crop_perc,ewood_perc,dwood_perc,grass_perc,ice_perc,inwater_perc,loose_rock_perc,mix_wood_perc,rock_perc,shrub_perc,urban_perc,wetlands_perc,blank_perc 
+
+**Source data**:
+* clc copernicus server: 1990, 2000, 2006, 2012 and 2018
+
+**Code used**: extract/camels_ch_clc.R
 
 ## CAMELS_CH_soil_attributes
 
@@ -104,7 +110,7 @@ The following conventions have been defined for the resulting files:
 **Source data**:
 * [Hydrogeologische Karte der Schweiz: Grundwasservorkommen 1:500000](https://data.geo.admin.ch/ch.swisstopo.geologie-hydrogeologische_karte-grundwasservorkommen), reclassified according to [Viviroli (2007)](https://boris.unibe.ch/165989) and [Viviroli et al. (2009)](https://dx.doi.org/10.1016/j.jhydrol.2009.08.022)
 
-**Code used**: extract/hydrogeol_reclass.py
+**Code used**: extract/hydrogeol_reclass.py, extract/camels_ch_hydrogeo.R
 
 **Instructions**:
 1. Get source data from data.geo.admin.ch (last accessed 18.03.2022)
