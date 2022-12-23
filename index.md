@@ -88,6 +88,55 @@ The following conventions have been defined for the resulting files:
 **Source data**:
 * clc copernicus server: 1990, 2000, 2006, 2012 and 2018
 
+**reclassification**:
+* clc_code: 111, 	clc_LABEL3: Continuous urban fabric, 	camels_ch_attribute: urban
+* clc_code: 112, 	clc_LABEL3: Discontinuous urban fabric, 	camels_ch_attribute: urban
+* clc_code: 121, 	clc_LABEL3: Industrial or commercial units, 	camels_ch_attribute: urban
+* clc_code: 122, 	clc_LABEL3: Road and rail networks and associated land, 	camels_ch_attribute: urban
+* clc_code: 123, 	clc_LABEL3: Port areas, 	camels_ch_attribute: urban
+* clc_code: 124, 	clc_LABEL3: Airports, 	camels_ch_attribute: urban
+* clc_code: 131, 	clc_LABEL3: Mineral extraction sites, 	camels_ch_attribute: loose_rock
+* clc_code: 132, 	clc_LABEL3: Dump sites, 	camels_ch_attribute: loose_rock
+* clc_code: 133, 	clc_LABEL3: Construction sites, 	camels_ch_attribute: loose_rock
+* clc_code: 141, 	clc_LABEL3: Green urban areas, 	camels_ch_attribute: grass
+* clc_code: 142, 	clc_LABEL3: Sport and leisure facilities, 	camels_ch_attribute: urban
+* clc_code: 211, 	clc_LABEL3: Non-irrigated arable land, 	camels_ch_attribute: crop
+* clc_code: 212, 	clc_LABEL3: Permanently irrigated land, 	camels_ch_attribute: crop
+* clc_code: 213, 	clc_LABEL3: Rice fields, 	camels_ch_attribute: crop
+* clc_code: 221, 	clc_LABEL3: Vineyards, 	camels_ch_attribute: scrub
+* clc_code: 222, 	clc_LABEL3: Fruit trees and berry plantations, 	camels_ch_attribute: scrub
+* clc_code: 223, 	clc_LABEL3: Olive groves, 	camels_ch_attribute: scrub
+* clc_code: 231, 	clc_LABEL3: Pastures, 	camels_ch_attribute: grass
+* clc_code: 241, 	clc_LABEL3: Annual crops associated with permanent crops, 	camels_ch_attribute: crop
+* clc_code: 242, 	clc_LABEL3: Complex cultivation patterns, 	camels_ch_attribute: crop
+* clc_code: 243, 	clc_LABEL3: Land principally occupied by agriculture, with significant areas of natural vegetation, 	camels_ch_attribute: crop
+* clc_code: 244, 	clc_LABEL3: Agro-forestry areas, 	camels_ch_attribute: scrub
+* clc_code: 311, 	clc_LABEL3: Broad-leaved forest, 	camels_ch_attribute: dwood
+* clc_code: 312, 	clc_LABEL3: Coniferous forest, 	camels_ch_attribute: ewood
+* clc_code: 313, 	clc_LABEL3: Mixed forest, 	camels_ch_attribute: mixed_wood
+* clc_code: 321, 	clc_LABEL3: Natural grasslands, 	camels_ch_attribute: grass
+* clc_code: 322, 	clc_LABEL3: Moors and heathland, 	camels_ch_attribute: wetlands
+* clc_code: 323, 	clc_LABEL3: Sclerophyllous vegetation, 	camels_ch_attribute: scrub
+* clc_code: 324, 	clc_LABEL3: Transitional woodland-shrub, 	camels_ch_attribute: scrub
+* clc_code: 331, 	clc_LABEL3: Beaches, dunes, sands, 	camels_ch_attribute: loose_rock
+* clc_code: 332, 	clc_LABEL3: Bare rocks, 	camels_ch_attribute: rock
+* clc_code: 333, 	clc_LABEL3: Sparsely vegetated areas, 	camels_ch_attribute: loose_rock
+* clc_code: 334, 	clc_LABEL3: Burnt areas, 	camels_ch_attribute: loose_rock
+* clc_code: 335, 	clc_LABEL3: Glaciers and perpetual snow, 	camels_ch_attribute: ice
+* clc_code: 411, 	clc_LABEL3: Inland marshes, 	camels_ch_attribute: wetlands
+* clc_code: 412, 	clc_LABEL3: Peat bogs, 	camels_ch_attribute: wetlands
+* clc_code: 421, 	clc_LABEL3: Salt marshes, 	camels_ch_attribute: wetlands
+* clc_code: 422, 	clc_LABEL3: Salines, 	camels_ch_attribute: wetlands
+* clc_code: 423, 	clc_LABEL3: Intertidal flats, 	camels_ch_attribute: wetlands
+* clc_code: 511, 	clc_LABEL3: Water courses, 	camels_ch_attribute: inwater
+* clc_code: 512, 	clc_LABEL3: Water bodies, 	camels_ch_attribute: inwater
+* clc_code: 521, 	clc_LABEL3: Coastal lagoons, 	camels_ch_attribute: inwater
+* clc_code: 522, 	clc_LABEL3: Estuaries, 	camels_ch_attribute: inwater
+* clc_code: 523, 	clc_LABEL3: Sea and ocean, 	camels_ch_attribute: inwater
+* clc_code: 999, 	clc_LABEL3: NODATA, 	camels_ch_attribute: inwater
+* clc_code: 990, 	clc_LABEL3: UNCLASSIFIED LAND SURFACE, 	camels_ch_attribute: inwater
+* clc_code: 995, 	clc_LABEL3: UNCLASSIFIED WATER BODIES, 	camels_ch_attribute: inwater
+
 **Code used**: extract/camels_ch_clc.R
 
 ## CAMELS_CH_soil_attributes
