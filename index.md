@@ -63,22 +63,33 @@ The following conventions have been defined for the resulting files:
 
 
 ## CAMELS_CH_climatic_attributes
+**Attributes**: "gauge_ID", "sign_start_date", "sign_end_date", "sign_number_of_years", "p_mean", "pet_mean", "aridity", "p_seasonality", "frac_snow", "high_prec_freq" ,"high_prec_dur", "high_prec_timing", "low_prec_freq", "low_prec_dur", "low_prec_timing"  
 
+**Versions**: Climatic indices are calculated based on i) observed data, and ii) simulated data.
+
+**Source data**:
+* Observed data: Temperature and precipitation time series are from MeteoSwiss, and potential evapotranspiration time series are from Prevah (and thus simulated). The observation-based climatic indices were calculated for the same time period as the observation-based hydrological signature to ease comparison.
+* Simulated data: Streamflow time series are from Prevah simulations. The simulation-based climatic indices were calculated for the same time period as the simulation-based hydrological signature to ease comparison.
+
+**Code used**: [hydro/climate_indices.R] https://github.com/camels-ch/camels/blob/ch-specific/compute/climate_indices.R
+
+**Instructions**:
+* Note: Only years with complete hydrological year are used (5% missing values are tolerated per hydrological year).
 
 ## CAMELS_CH_hydrologic_attributes
 
-### Hydrologic Signatures
+**Attributes**: "gauge_ID","sign_start_date","sign_end_date","sign_number_of_years","q_mean","runoff_ratio","stream_elas","slope_fdc","baseflow_index_landson" "hfd_mean","Q5","Q95","high_q_freq","high_q_dur","low_q_freq","low_q_dur","zero_q_freq"
 
-**Attributes**: q_mean, runoff_ratio, stream_elas, slope_fdc, baseflow_index, baseflow_index_ceh, hfd_mean, Q5, Q95, high_q_freq, high_q_dur, low_q_freq, low_q_dur, zero_q_freq
+**Versions**: Hydrological signatures are calculated based on i) observed data, and ii) simulated data.
 
 **Source data**:
-* Streamflow time series provided by BAFU
+* Observed data: Streamflow time series provided by BAFU. The simulated time series varies among catchments.
+* Simulated data: Streamflow time series are from Prevah simulations. The simulated time series is identical for all catchments and lasts from 1981-10-01 to 2020-09-30.
 
-**Code used**: hydro/hydro_signatures.R
+**Code used**: [hydro/hydro_signatures.R](https://github.com/camels-ch/camels/blob/ch-specific/compute/hydro_signatures.R)
 
 **Instructions**:
-1. ...
-2. ...
+* Note: Only years with complete hydrological year are used (5% missing values are tolerated per hydrological year).
 
 
 ## CAMELS_CH_landcover_attributes
