@@ -11,7 +11,6 @@ The purpose of this guide is to describe the creation of the CAMELS-CH dataset i
   * [Catchment properties](#catchment-properties)
 - [CAMELS_CH_climatic_attributes](#camels_ch_climatic_attributes)
 - [CAMELS_CH_hydrologic_attributes](#camels_ch_hydrologic_attributes)
-  * [Hydrologic Signatures](#hydrologic-signatures)
 - [CAMELS_CH_landcover_attributes](#camels_ch_landcover_attributes)
 - [CAMELS_CH_soil_attributes](#camels_ch_soil_attributes)
 - [CAMELS_CH_hydrogeology_attributes](#camels_ch_hydrogeology_attributes)
@@ -63,18 +62,19 @@ The following conventions have been defined for the resulting files:
 
 
 ## CAMELS_CH_climatic_attributes
-**Attributes**: "gauge_ID", "sign_start_date", "sign_end_date", "sign_number_of_years", "p_mean", "pet_mean", "aridity", "p_seasonality", "frac_snow", "high_prec_freq" ,"high_prec_dur", "high_prec_timing", "low_prec_freq", "low_prec_dur", "low_prec_timing"  
+**Attributes**: "gauge_ID", "sign_start_date", "sign_end_date", "sign_number_of_years", "p_mean", "pet_mean", "aridity", "p_seasonality", "frac_snow", "high_prec_freq" ,"high_prec_dur", "high_prec_timing", "low_prec_freq", "low_prec_dur", "low_prec_timing" 
 
 **Versions**: Climatic indices are calculated based on i) observed data, and ii) simulated data.
 
 **Source data**:
-* Observed data: Temperature and precipitation time series are from MeteoSwiss, and potential evapotranspiration time series are from Prevah (and thus simulated). The observation-based climatic indices were calculated for the same time period as the observation-based hydrological signature to ease comparison.
-* Simulated data: Streamflow time series are from Prevah simulations. The simulation-based climatic indices were calculated for the same time period as the simulation-based hydrological signature to ease comparison.
+* Observed data: Temperature and precipitation time series are from MeteoSwiss, and potential evapotranspiration time series are from Prevah (and thus simulated). The observation-based climatic indices were calculated for the same time period as the observation-based hydrological signatures to ease comparison.
+* Simulated data: Streamflow time series are from Prevah simulations. The simulation-based climatic indices were calculated for the same time period as the simulation-based hydrological signatures to ease comparison.
 
-**Code used**: [hydro/climate_indices.R] https://github.com/camels-ch/camels/blob/ch-specific/compute/climate_indices.R
+**Code used**: https://github.com/camels-ch/camels/blob/ch-specific/compute/climate_indices.R
 
 **Instructions**:
 * Note: Only years with complete hydrological year are used (5% missing values are tolerated per hydrological year).
+* Note: The variables "high_prec_timing" and "low_prec_timing" can have NA values if the number of high precipitation days or the number of low precipitation days is identical in multiple seasons.
 
 ## CAMELS_CH_hydrologic_attributes
 
@@ -83,13 +83,14 @@ The following conventions have been defined for the resulting files:
 **Versions**: Hydrological signatures are calculated based on i) observed data, and ii) simulated data.
 
 **Source data**:
-* Observed data: Streamflow time series provided by BAFU. The simulated time series varies among catchments.
+* Observed data: Streamflow time series provided by BAFU. The length of the observed time series varies among catchments.
 * Simulated data: Streamflow time series are from Prevah simulations. The simulated time series is identical for all catchments and lasts from 1981-10-01 to 2020-09-30.
 
-**Code used**: [hydro/hydro_signatures.R](https://github.com/camels-ch/camels/blob/ch-specific/compute/hydro_signatures.R)
+**Code used**: https://github.com/camels-ch/camels/blob/ch-specific/compute/hydro_signatures.R
 
 **Instructions**:
 * Note: Only years with complete hydrological year are used (5% missing values are tolerated per hydrological year).
+* Note: The variable "stream_elas" can have a value of NA if only one complete hydrological year is available.
 
 
 ## CAMELS_CH_landcover_attributes
