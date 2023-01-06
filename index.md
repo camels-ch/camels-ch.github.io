@@ -98,7 +98,7 @@ The following conventions have been defined for the resulting files:
 **Attributes**:crop_perc,ewood_perc,dwood_perc,grass_perc,ice_perc,inwater_perc,loose_rock_perc,mix_wood_perc,rock_perc,shrub_perc,urban_perc,wetlands_perc,blank_perc 
 
 **Source data**:
-* clc copernicus server: 1990, 2000, 2006, 2012 and 2018
+* clc 1990, clc 2000, clc 2006, clc 2012 and clc 2018 on copernicus server: https://land.copernicus.eu/pan-european/corine-land-cover
 
 **reclassification**:
 * clc_code: 111, 	clc_LABEL3: Continuous urban fabric, 	camels_ch_attribute: urban
