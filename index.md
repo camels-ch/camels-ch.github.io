@@ -149,7 +149,12 @@ The following conventions have been defined for the resulting files:
 * clc_code: 990, 	clc_LABEL3: UNCLASSIFIED LAND SURFACE, 	camels_ch_attribute: inwater
 * clc_code: 995, 	clc_LABEL3: UNCLASSIFIED WATER BODIES, 	camels_ch_attribute: inwater
 
-**Code used**: extract/camels_ch_clc.R
+**Code used**: https://github.com/camels-ch/camels/blob/ch-specific/extract/camels_ch_clc.R
+
+**Instructions**:
+1. Get clc data from copernicus server
+2. Use code provided in camels_ch_clc.R to compute the different attributes
+3. Note: In 1990 only areas outside Switzerland were covered by clc_1990, therefore only catchments with more then 95% data in clc_1990 were calculated.
 
 ## CAMELS_CH_soil_attributes
 
@@ -171,7 +176,7 @@ The following conventions have been defined for the resulting files:
 **Source data**:
 * [Hydrogeologische Karte der Schweiz: Grundwasservorkommen 1:500000](https://data.geo.admin.ch/ch.swisstopo.geologie-hydrogeologische_karte-grundwasservorkommen), reclassified according to [Viviroli (2007)](https://boris.unibe.ch/165989) and [Viviroli et al. (2009)](https://dx.doi.org/10.1016/j.jhydrol.2009.08.022)
 
-**Code used**: extract/hydrogeol_reclass.py, extract/camels_ch_hydrogeo.R
+**Code used**: extract/hydrogeol_reclass.py, https://github.com/camels-ch/camels/blob/ch-specific/extract/camels_ch_hydrogeo.R
 
 **Instructions**:
 1. Get source data from data.geo.admin.ch (last accessed 18.03.2022)
