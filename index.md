@@ -161,7 +161,7 @@ The following conventions have been defined for the resulting files:
 
 ## CAMELS_CH_hydrogeology_attributes
 
-**Attributes**: hygeol_unconsol_coarse_perc, hygeol_unconsol_medium_perc, hygeol_unconsol_fine_perc, hygeol_unconsol_imperm_perc, hygeol_karst_perc, hygeol_hardrock_perc, hygeol_hardrock_imperm_perc, hygeol_water_perc, hygeol_external_perc
+**Attributes**: gauge_id, hygeol_unconsol_coarse_perc, hygeol_unconsol_medium_perc, hygeol_unconsol_fine_perc, hygeol_unconsol_imperm_perc, hygeol_karst_perc, hygeol_hardrock_perc, hygeol_hardrock_imperm_perc, hygeol_water_perc, hygeol_external_perc
 
 * hygeol_unconsol_coarse_perc: unconsolidated 1 (well-permeable gravel in valley bottoms)
 * hygeol_unconsol_medium_perc: unconsolidated 2 (permeable gravel outside of valley bottoms, sandy gravel, medium- to coarse-grained gravel)
