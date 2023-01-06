@@ -180,6 +180,7 @@ The following conventions have been defined for the resulting files:
 4. Paste contents of hydrogeol_reclass.py into field calculator's pre-logic script code window (use this for the numeric field ID1)
 5. Fill in field calculator's expression box (for both ID1 and ID2) with "calc(!H2_ID!)" (without quote marks)
 6. Hit "Compute" in field calculator
+7. run code camels_ch_hydrogeo.R
 
 
 ## CAMELS_CH_hydrometry_attributes
