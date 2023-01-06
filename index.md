@@ -154,7 +154,7 @@ The following conventions have been defined for the resulting files:
 **Instructions**:
 1. Get clc data from copernicus server
 2. Use code provided in camels_ch_clc.R to compute the different attributes
-3. Note: In 1990 only areas outside Switzerland were covered by clc_1990, therefore only catchments with more then 95% data in clc_1990 were calculated.
+3. Note: clc_1990 has no data for Switzerland, so  catchments with 5% or more were filled with NA.
 
 ## CAMELS_CH_soil_attributes
 
