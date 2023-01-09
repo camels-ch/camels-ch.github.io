@@ -193,8 +193,15 @@ The following conventions have been defined for the resulting files:
 
 ## CAMELS_CH_humaninfluence_attributes
 
-**Attributes**: num_reservoir, reservoir_cap, reservoir_he, reservoir_fs, reservoir_irr, reservoir_nousedata, reservoir_year_first, reservoir_year_last
+**Attributes**: gauge_id, n_inhabitants, dens_inhabitants, hp_count, hp_qturb, hp_inst_turb, hp_max_power, num_reservoir, reservoir_cap, reservoir_he, reservoir_fs, reservoir_irr, reservoir_nousedata, reservoir_year_first, reservoir_year_last
 
+* gauge_id: CAMELS-CH gauge ID
+* n_inhabitants: number of inhabitants
+* dens_inhabitants: density of inhabitants
+* hp_count: 
+* hp_ qturb:
+* hp_inst_turb:
+* hp_max_power: 
 * num_reservoir: number of reservoirs in catchment
 * reservoir_cap: total reservoir storage capacity within a catchment in ML
 * reservoir_he: percentage of total reservoir storage in catchment used for hydroelectricty production
