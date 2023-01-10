@@ -176,17 +176,11 @@ The following conventions have been defined for the resulting files:
 **Source data**:
 * [Hydrogeologische Karte der Schweiz: Grundwasservorkommen 1:500000](https://data.geo.admin.ch/ch.swisstopo.geologie-hydrogeologische_karte-grundwasservorkommen), reclassified according to [Viviroli (2007)](https://boris.unibe.ch/165989) and [Viviroli et al. (2009)](https://dx.doi.org/10.1016/j.jhydrol.2009.08.022)
 
-**Code used**: extract/hydrogeol_reclass.py, https://github.com/camels-ch/camels/blob/ch-specific/extract/camels_ch_hydrogeo.R
+**Code used**: https://github.com/camels-ch/camels/blob/ch-specific/extract/camels_ch_hydrogeo.R
 
 **Instructions**:
 1. Get source data from data.geo.admin.ch (last accessed 18.03.2022)
-2. From source data use layer "PY_Basis_Flaechen" and there field "H2_ID"
-3. Open ArcMap field calculator. Chose Python as parser and activate "show codeblock"
-4. Paste contents of hydrogeol_reclass.py into field calculator's pre-logic script code window (use this for the numeric field ID1)
-5. Fill in field calculator's expression box (for both ID1 and ID2) with "calc(!H2_ID!)" (without quote marks)
-6. Hit "Compute" in field calculator
-7. run code camels_ch_hydrogeo.R
-
+2. Use code provided in camels_ch_hydrogeo.R to compute the different attributes 
 
 ## CAMELS_CH_hydrometry_attributes
 
