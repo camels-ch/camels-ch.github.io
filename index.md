@@ -180,7 +180,7 @@ The following conventions have been defined for the resulting files:
 
 **Instructions**:
 1. Get source data from data.geo.admin.ch (last accessed 18.03.2022)
-2. Use code provided in camels_ch_hydrogeo.R to compute the different attributes 
+2. Use code provided in camels_ch_hydrogeo_V2.R to compute the different attributes 
 
 ## CAMELS_CH_hydrometry_attributes
 
