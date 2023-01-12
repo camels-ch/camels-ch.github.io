@@ -176,7 +176,7 @@ The following conventions have been defined for the resulting files:
 **Source data**:
 * [Hydrogeologische Karte der Schweiz: Grundwasservorkommen 1:500000](https://data.geo.admin.ch/ch.swisstopo.geologie-hydrogeologische_karte-grundwasservorkommen), reclassified according to [Viviroli (2007)](https://boris.unibe.ch/165989) and [Viviroli et al. (2009)](https://dx.doi.org/10.1016/j.jhydrol.2009.08.022)
 
-**Code used**: https://github.com/camels-ch/camels/blob/ch-specific/extract/camels_ch_hydrogeo.R
+**Code used**: https://github.com/camels-ch/camels/blob/ch-specific/extract/camels_ch_hydrogeo_V2.R
 
 **Instructions**:
 1. Get source data from data.geo.admin.ch (last accessed 18.03.2022)
