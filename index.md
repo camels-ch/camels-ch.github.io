@@ -46,6 +46,8 @@ The following conventions have been defined for the resulting files:
 1. ...
 2. ...
 
+**Contributors**: ...
+
 ### Catchment properties
 
 **Attributes**: area, dpsbar, elev_mean, elev_min, elev_10, elev_50, elev_90, elev_max
@@ -60,6 +62,7 @@ The following conventions have been defined for the resulting files:
 1. ...
 2. ...
 
+**Contributors**: ...
 
 ## CAMELS_CH_climatic_attributes
 **Attributes**: "gauge_ID", "sign_start_date", "sign_end_date", "sign_number_of_years", "p_mean", "pet_mean", "aridity", "p_seasonality", "frac_snow", "high_prec_freq" ,"high_prec_dur", "high_prec_timing", "low_prec_freq", "low_prec_dur", "low_prec_timing" 
@@ -75,6 +78,8 @@ The following conventions have been defined for the resulting files:
 **Instructions**:
 * Note: Only years with complete hydrological year are used (5% missing values are tolerated per hydrological year).
 * Note: The variables "high_prec_timing" and "low_prec_timing" can have NA values if the number of high precipitation days or the number of low precipitation days is identical in multiple seasons.
+
+**Contributors**: ...
 
 ## CAMELS_CH_hydrologic_attributes
 
@@ -92,6 +97,8 @@ The following conventions have been defined for the resulting files:
 * Note: Only years with complete hydrological year are used (5% missing values are tolerated per hydrological year).
 * Note: The variable "stream_elas" can have a value of NA if only one complete hydrological year is available.
 
+**Contributors**: ...
+
 
 ## CAMELS_CH_landcover_attributes
 
@@ -100,7 +107,7 @@ The following conventions have been defined for the resulting files:
 **Source data**:
 * clc 1990, clc 2000, clc 2006, clc 2012 and clc 2018 on copernicus server: https://land.copernicus.eu/pan-european/corine-land-cover
 
-**reclassification**:
+**Reclassification**:
 * clc_code: 111, 	clc_LABEL3: Continuous urban fabric, 	camels_ch_attribute: urban
 * clc_code: 112, 	clc_LABEL3: Discontinuous urban fabric, 	camels_ch_attribute: urban
 * clc_code: 121, 	clc_LABEL3: Industrial or commercial units, 	camels_ch_attribute: urban
@@ -156,6 +163,9 @@ The following conventions have been defined for the resulting files:
 2. Use code provided in camels_ch_clc.R to compute the different attributes
 3. Note: clc_1990 has no data for Switzerland, so  catchments with 5% or more were filled with NA.
 
+**Contributors**: ...
+
+
 ## CAMELS_CH_soil_attributes
 
 
@@ -181,6 +191,8 @@ The following conventions have been defined for the resulting files:
 **Instructions**:
 1. Get source data from data.geo.admin.ch (last accessed 18.03.2022)
 2. Use code provided in camels_ch_hydrogeo_V2.R to compute the different attributes 
+
+**Contributors**: ...
 
 ## CAMELS_CH_hydrometry_attributes
 
@@ -214,4 +226,6 @@ The following conventions have been defined for the resulting files:
 1. Get reservoir data from SFOE
 2. Use code provided in camels_ch_reservoirs.R to compute the different attributes
 3. Detailed descriptions of how the different attributes are computed are provided in camels_ch_reservoirs.R
+
+**Contributors**: Manuela Brunner, Marvin Höge
 
