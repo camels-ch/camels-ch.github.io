@@ -229,3 +229,29 @@ The following conventions have been defined for the resulting files:
 
 **Contributors**: Manuela Brunner, Marvin Höge
 
+**CAMELS_CH_glaciers
+
+**Attributes**: gauge_id, glac_area, glac_vol, glac_mass, glac_area_neighbours
+
+* gauge_id: CAMELS-CH gauge ID
+* glac_area: glacier area (km2) in Switzerland, evolution per catchment between 1980 and 2021
+* glac_vol: glacier volume (km3) in Switzerland, evolution per catchment between 1980 and 2021
+* glac_mass: glacier mass (mega tons) in Switzerland, calculated from glac_vol*850
+* glac_area_neighbours: glacier area (km2) in neighouring countries (France, Italy, Germany, Austria), evolution per catchment between 1980 and 2021
+
+**Source data**:
+* Glamos_1973 https://doi.glamos.ch/data/inventory/inventory_sgi1973_r1976.html
+* Glamos_2016 https://doi.glamos.ch/data/inventory/inventory_sgi2016_r2020.html
+* Glacier Inventar 2003 and 2015 from GLIMS https://www.glims.org/maps/textsearch/, Paul et al, 2020: https://doi.pangaea.de/10.1594/PANGAEA.909133
+* evolution table from sig link from matthias.huss@unifr.ch
+* evolution table from gi link from sibylle.wilhelm@giub.unibe.ch
+
+**Code used**: 
+->  link to script
+
+**Instructions**:
+1. Get shape files from Glamos and GLIMS
+2. Get evolution tables from sgi and gi -> Link
+3. Use code provided in camels_ch_glaciers_aggregation_vx.R to compute the different attributes
+
+**Contributors**: Marvin Höge, Ursula Schoenenberger, Sibylle Wilhelm, Matthias Huss
