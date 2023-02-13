@@ -16,6 +16,7 @@ The purpose of this guide is to describe the creation of the CAMELS-CH dataset i
 - [CAMELS_CH_hydrogeology_attributes](#camels_ch_hydrogeology_attributes)
 - [CAMELS_CH_hydrometry_attributes](#camels_ch_hydrometry_attributes)
 - [CAMELS_CH_humaninfluence_attributes](#camels_ch_humaninfluence_attributes)
+- [CAMELS_CH_glaciers_attributes](#camels_ch_humaninfluence_attributes)
 <!-- TOC end -->
 
 ## Conventions on file content
@@ -229,7 +230,7 @@ The following conventions have been defined for the resulting files:
 
 **Contributors**: Manuela Brunner, Marvin Höge
 
-## CAMELS_CH_glaciers
+## CAMELS_CH_glaciers_attributes
 
 **Attributes**: gauge_id, glac_area, glac_vol, glac_mass, glac_area_neighbours
 
