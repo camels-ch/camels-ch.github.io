@@ -229,7 +229,7 @@ The following conventions have been defined for the resulting files:
 
 **Contributors**: Manuela Brunner, Marvin Höge
 
-**CAMELS_CH_glaciers
+## CAMELS_CH_glaciers
 
 **Attributes**: gauge_id, glac_area, glac_vol, glac_mass, glac_area_neighbours
 
