@@ -237,7 +237,7 @@ The following conventions have been defined for the resulting files:
 * gauge_id: CAMELS-CH gauge ID
 * glac_area: glacier area (km2) in Switzerland, evolution per catchment between 1980 and 2021
 * glac_vol: glacier volume (km3) in Switzerland, evolution per catchment between 1980 and 2021
-* glac_mass: glacier mass (mega tons) in Switzerland, calculated from glac_vol*850
+* glac_mass: glacier mass (mega tons) in Switzerland, calculated from glac_vol*850, evolution per catchment between 1980 and 2021
 * glac_area_neighbours: glacier area (km2) in neighouring countries (France, Italy, Germany, Austria), evolution per catchment between 1980 and 2021
 
 **Source data**:
