@@ -230,7 +230,7 @@ The following conventions have been defined for the resulting files:
 
 **Contributors**: Manuela Brunner, Marvin Höge
 
-## CAMELS_CH_glaciers_attributes
+## CAMELS_CH_glacier_attributes
 
 **Attributes**: gauge_id, glac_area, glac_vol, glac_mass, glac_area_neighbours
 
@@ -252,6 +252,6 @@ The following conventions have been defined for the resulting files:
 **Instructions**:
 1. Get shape files from Glamos and GLIMS
 2. Get evolution tables from sgi and gi -> Link
-3. Use code provided in camels_ch_glaciers_aggregation_vx.R to compute the different attributes
+3. Use code provided in camels_ch_glacier_aggregation.R to compute the different attributes
 
 **Contributors**: Marvin Höge, Ursula Schoenenberger, Sibylle Wilhelm, Matthias Huss
