@@ -157,7 +157,7 @@ The following conventions have been defined for the resulting files:
 * clc_code: 990, 	clc_LABEL3: UNCLASSIFIED LAND SURFACE, 	camels_ch_attribute: inwater
 * clc_code: 995, 	clc_LABEL3: UNCLASSIFIED WATER BODIES, 	camels_ch_attribute: inwater
 
-**Code used**: https://github.com/camels-ch/camels/blob/ch-specific/extract/camels_ch_clc.R
+**Code used**: extract/camels_ch_clc.R
 
 **Instructions**:
 1. Get clc data from copernicus server
@@ -187,7 +187,7 @@ The following conventions have been defined for the resulting files:
 **Source data**:
 * [Hydrogeologische Karte der Schweiz: Grundwasservorkommen 1:500000](https://data.geo.admin.ch/ch.swisstopo.geologie-hydrogeologische_karte-grundwasservorkommen), reclassified according to [Viviroli (2007)](https://boris.unibe.ch/165989) and [Viviroli et al. (2009)](https://dx.doi.org/10.1016/j.jhydrol.2009.08.022)
 
-**Code used**: https://github.com/camels-ch/camels/blob/ch-specific/extract/camels_ch_hydrogeo_V2.R
+**Code used**: extract/camels_ch_hydrogeo_V2.R
 
 **Instructions**:
 1. Get source data from data.geo.admin.ch (last accessed 18.03.2022)
@@ -247,8 +247,7 @@ The following conventions have been defined for the resulting files:
 * evolution table from sig link from matthias.huss@unifr.ch
 * evolution table from gi link from sibylle.wilhelm@giub.unibe.ch
 
-**Code used**: 
-->  link to script
+**Code used**: extract/CAMELS_CH_glacier_aggregation.R
 
 **Instructions**:
 1. Get shape files from Glamos and GLIMS
