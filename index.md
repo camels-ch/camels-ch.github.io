@@ -248,7 +248,7 @@ The following conventions have been defined for the resulting files:
 * evolution table from sig link from matthias.huss@unifr.ch
 * evolution table from gi link from sibylle.wilhelm@giub.unibe.ch
 
-**Code used**: extract/CAMELS_CH_glacier_aggregation.R
+**Code used**: extract/camels_ch_glacier_aggregation.R
 
 **Instructions**:
 1. Get shape files from Glamos and GLIMS -> Link
