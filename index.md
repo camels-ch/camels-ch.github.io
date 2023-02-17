@@ -243,14 +243,15 @@ The following conventions have been defined for the resulting files:
 **Source data**:
 * Glamos_1973 https://doi.glamos.ch/data/inventory/inventory_sgi1973_r1976.html
 * Glamos_2016 https://doi.glamos.ch/data/inventory/inventory_sgi2016_r2020.html
-* Glacier Inventar 2003 and 2015 from GLIMS https://www.glims.org/maps/textsearch/, Paul et al, 2020: https://doi.pangaea.de/10.1594/PANGAEA.909133
+* GLIMS_2015 glacier inventory Paul et al. (2020): Paul, F et al. (2019): Glacier inventory of the Alps from Sentinel-2, shape files (pangaea.de) https://doi.pangaea.de/10.1594/PANGAEA.909133
+* GLIMS_2003 glacier inventory Paul et al. (2011): https://www.glims.org/maps/textsearch/
 * evolution table from sig link from matthias.huss@unifr.ch
 * evolution table from gi link from sibylle.wilhelm@giub.unibe.ch
 
 **Code used**: extract/CAMELS_CH_glacier_aggregation.R
 
 **Instructions**:
-1. Get shape files from Glamos and GLIMS
+1. Get shape files from Glamos and GLIMS -> Link
 2. Get evolution tables from sgi and gi -> Link
 3. Use code provided in camels_ch_glacier_aggregation.R to compute the different attributes
 
