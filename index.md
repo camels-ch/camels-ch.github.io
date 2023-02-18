@@ -14,7 +14,7 @@ The purpose of this guide is to describe the creation of the CAMELS-CH dataset i
 - [CAMELS_CH_landcover_attributes](#camels_ch_landcover_attributes)
 - [CAMELS_CH_soil_attributes](#camels_ch_soil_attributes)
 - [CAMELS_CH_hydrogeology_attributes](#camels_ch_hydrogeology_attributes)
-- [CAMELS_CH_hydrometry_attributes](#camels_ch_hydrometry_attributes)
+- [CAMELS_CH_geology_attributes](#camels_ch_geology_attributes)
 - [CAMELS_CH_humaninfluence_attributes](#camels_ch_humaninfluence_attributes)
 - [CAMELS_CH_glaciers_attributes](#camels_ch_glaciers_attributes)
 <!-- TOC end -->
@@ -101,6 +101,66 @@ The following conventions have been defined for the resulting files:
 **Contributors**: ...
 
 
+## CAMELS_CH_soil_attributes
+
+
+## CAMELS_CH_hydrogeology_attributes
+
+**Attributes**: gauge_id, hygeol_unconsol_coarse_perc, hygeol_unconsol_medium_perc, hygeol_unconsol_fine_perc, hygeol_unconsol_imperm_perc, hygeol_karst_perc, hygeol_hardrock_perc, hygeol_hardrock_imperm_perc, hygeol_water_perc, hygeol_external_perc
+
+* hygeol_unconsol_coarse_perc: unconsolidated 1 (well-permeable gravel in valley bottoms)
+* hygeol_unconsol_medium_perc: unconsolidated 2 (permeable gravel outside of valley bottoms, sandy gravel, medium- to coarse-grained gravel)
+* hygeol_unconsol_fine_perc: unconsolidated 3 (loamy gravel, fine- to medium-grained debris, moraines)
+* hygeol_unconsol_imperm_perc: impermeable, unconsolidated (clay, silt, fine sands, loamy moraines)
+* hygeol_karst_perc: karstic rock (carbonate rock: limestone, dolomite, rauhwacke; sulphate-containing rock: gypsum, anhydrite)
+* hygeol_hardrock_perc: hard rock (fissured and porous, non-karstic hard rock: conglomerates, sandstone, limestone with marl layers; crystalline rock: granite, granodiorites, tonalite)
+* hygeol_hardrock_imperm_perc: impermeable hard rock (marl, shale, gneiss, cemented sandstone)
+* hygeol_water_perc: water (glaciers, firn, surface waters)
+* hygeol_external_perc: external (not defined, or outside of original map source)
+
+**Source data**:
+* [Hydrogeologische Karte der Schweiz: Grundwasservorkommen 1:500000](https://data.geo.admin.ch/ch.swisstopo.geologie-hydrogeologische_karte-grundwasservorkommen), reclassified according to [Viviroli (2007)](https://boris.unibe.ch/165989) and [Viviroli et al. (2009)](https://dx.doi.org/10.1016/j.jhydrol.2009.08.022)
+
+**Code used**: extract/camels_ch_hydrogeo_V2.R
+
+**Instructions**:
+1. Get source data from data.geo.admin.ch (last accessed 18.03.2022)
+2. Use code provided in camels_ch_hydrogeo_V2.R to compute the different attributes 
+
+**Contributors**: ...
+
+## CAMELS_CH_geology_attributes
+
+
+## CAMELS_CH_glacier_attributes
+
+**Attributes**: gauge_id, glac_area, glac_vol, glac_mass, glac_area_neighbours
+
+* gauge_id: CAMELS-CH gauge ID
+* glac_area: glacier area (km2) in Switzerland, evolution per catchment between 1980 and 2021
+* glac_vol: glacier volume (km3) in Switzerland, evolution per catchment between 1980 and 2021
+* glac_mass: glacier mass (mega tons) in Switzerland, calculated from glac_vol*850, evolution per catchment between 1980 and 2021
+* glac_area_neighbours: glacier area (km2) in neighouring countries (France, Italy, Germany, Austria), evolution per catchment between 1980 and 2021
+
+**Source data**:
+* Glamos_1973 https://doi.glamos.ch/data/inventory/inventory_sgi1973_r1976.html
+* Glamos_2016 https://doi.glamos.ch/data/inventory/inventory_sgi2016_r2020.html
+* GLIMS_2015 glacier inventory Paul et al. (2020): Paul, F et al. (2019): Glacier inventory of the Alps from Sentinel-2, shape files (pangaea.de) https://doi.pangaea.de/10.1594/PANGAEA.909133
+* GLIMS_2003 glacier inventory Paul et al. (2011): https://www.glims.org/maps/textsearch/
+* evolution table from sig link from matthias.huss@unifr.ch
+* evolution table from gi link from sibylle.wilhelm@giub.unibe.ch
+
+**Code used**: extract/camels_ch_glacier_aggregation.R
+
+**Instructions**:
+1. Get shape files from Glamos and GLIMS -> Link
+2. Get evolution tables from sgi and gi -> Link
+3. Use code provided in camels_ch_glacier_aggregation.R to compute the different attributes
+
+**Contributors**: Marvin Höge, Ursula Schoenenberger, Sibylle Wilhelm, Matthias Huss
+
+
+
 ## CAMELS_CH_landcover_attributes
 
 **Attributes**:gauge_id,crop_perc,ewood_perc,dwood_perc,grass_perc,ice_perc,inwater_perc,loose_rock_perc,mix_wood_perc,rock_perc,shrub_perc,urban_perc,wetlands_perc,blank_perc 
@@ -166,38 +226,6 @@ The following conventions have been defined for the resulting files:
 
 **Contributors**: ...
 
-
-## CAMELS_CH_soil_attributes
-
-
-## CAMELS_CH_hydrogeology_attributes
-
-**Attributes**: gauge_id, hygeol_unconsol_coarse_perc, hygeol_unconsol_medium_perc, hygeol_unconsol_fine_perc, hygeol_unconsol_imperm_perc, hygeol_karst_perc, hygeol_hardrock_perc, hygeol_hardrock_imperm_perc, hygeol_water_perc, hygeol_external_perc
-
-* hygeol_unconsol_coarse_perc: unconsolidated 1 (well-permeable gravel in valley bottoms)
-* hygeol_unconsol_medium_perc: unconsolidated 2 (permeable gravel outside of valley bottoms, sandy gravel, medium- to coarse-grained gravel)
-* hygeol_unconsol_fine_perc: unconsolidated 3 (loamy gravel, fine- to medium-grained debris, moraines)
-* hygeol_unconsol_imperm_perc: impermeable, unconsolidated (clay, silt, fine sands, loamy moraines)
-* hygeol_karst_perc: karstic rock (carbonate rock: limestone, dolomite, rauhwacke; sulphate-containing rock: gypsum, anhydrite)
-* hygeol_hardrock_perc: hard rock (fissured and porous, non-karstic hard rock: conglomerates, sandstone, limestone with marl layers; crystalline rock: granite, granodiorites, tonalite)
-* hygeol_hardrock_imperm_perc: impermeable hard rock (marl, shale, gneiss, cemented sandstone)
-* hygeol_water_perc: water (glaciers, firn, surface waters)
-* hygeol_external_perc: external (not defined, or outside of original map source)
-
-**Source data**:
-* [Hydrogeologische Karte der Schweiz: Grundwasservorkommen 1:500000](https://data.geo.admin.ch/ch.swisstopo.geologie-hydrogeologische_karte-grundwasservorkommen), reclassified according to [Viviroli (2007)](https://boris.unibe.ch/165989) and [Viviroli et al. (2009)](https://dx.doi.org/10.1016/j.jhydrol.2009.08.022)
-
-**Code used**: extract/camels_ch_hydrogeo_V2.R
-
-**Instructions**:
-1. Get source data from data.geo.admin.ch (last accessed 18.03.2022)
-2. Use code provided in camels_ch_hydrogeo_V2.R to compute the different attributes 
-
-**Contributors**: ...
-
-## CAMELS_CH_hydrometry_attributes
-
-
 ## CAMELS_CH_humaninfluence_attributes
 
 **Attributes**: gauge_id, n_inhabitants, dens_inhabitants, hp_count, hp_qturb, hp_inst_turb, hp_max_power, num_reservoir, reservoir_cap, reservoir_he, reservoir_fs, reservoir_irr, reservoir_nousedata, reservoir_year_first, reservoir_year_last
@@ -229,30 +257,3 @@ The following conventions have been defined for the resulting files:
 3. Detailed descriptions of how the different attributes are computed are provided in camels_ch_reservoirs.R
 
 **Contributors**: Manuela Brunner, Marvin Höge
-
-## CAMELS_CH_glacier_attributes
-
-**Attributes**: gauge_id, glac_area, glac_vol, glac_mass, glac_area_neighbours
-
-* gauge_id: CAMELS-CH gauge ID
-* glac_area: glacier area (km2) in Switzerland, evolution per catchment between 1980 and 2021
-* glac_vol: glacier volume (km3) in Switzerland, evolution per catchment between 1980 and 2021
-* glac_mass: glacier mass (mega tons) in Switzerland, calculated from glac_vol*850, evolution per catchment between 1980 and 2021
-* glac_area_neighbours: glacier area (km2) in neighouring countries (France, Italy, Germany, Austria), evolution per catchment between 1980 and 2021
-
-**Source data**:
-* Glamos_1973 https://doi.glamos.ch/data/inventory/inventory_sgi1973_r1976.html
-* Glamos_2016 https://doi.glamos.ch/data/inventory/inventory_sgi2016_r2020.html
-* GLIMS_2015 glacier inventory Paul et al. (2020): Paul, F et al. (2019): Glacier inventory of the Alps from Sentinel-2, shape files (pangaea.de) https://doi.pangaea.de/10.1594/PANGAEA.909133
-* GLIMS_2003 glacier inventory Paul et al. (2011): https://www.glims.org/maps/textsearch/
-* evolution table from sig link from matthias.huss@unifr.ch
-* evolution table from gi link from sibylle.wilhelm@giub.unibe.ch
-
-**Code used**: extract/camels_ch_glacier_aggregation.R
-
-**Instructions**:
-1. Get shape files from Glamos and GLIMS -> Link
-2. Get evolution tables from sgi and gi -> Link
-3. Use code provided in camels_ch_glacier_aggregation.R to compute the different attributes
-
-**Contributors**: Marvin Höge, Ursula Schoenenberger, Sibylle Wilhelm, Matthias Huss
