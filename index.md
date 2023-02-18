@@ -1,6 +1,6 @@
 # CAMELS-CH reproducibility guide
 
-The purpose of this guide is to describe the creation of the CAMELS-CH dataset in order to facilitate its future updating.
+The purpose of this guide is to describe the creation of the CAMELS-CH dataset for repoducibility and to faciliate future updating and customized application. Corresponding codes are generally available at https://github.com/camels-ch/camels and specified in each attribute category below.
 
 ## Table of Contents
 
