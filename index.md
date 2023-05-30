@@ -224,7 +224,7 @@ The following conventions have been defined for the resulting files:
 2. Use code provided in camels_ch_clc.R to compute the different attributes
 3. Note: clc_1990 has no data for Switzerland, so  catchments with 5% or more were filled with NA.
 
-**Contributors**: ...
+**Contributors**: Ursula Schoenenberger, Jan Schwanbeck
 
 ## CAMELS_CH_humaninfluence_attributes
 
