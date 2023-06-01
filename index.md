@@ -217,7 +217,7 @@ The following conventions have been defined for the resulting files:
 * clc_code: 990, 	clc_LABEL3: UNCLASSIFIED LAND SURFACE, 	camels_ch_attribute: inwater
 * clc_code: 995, 	clc_LABEL3: UNCLASSIFIED WATER BODIES, 	camels_ch_attribute: inwater
 
-**Code used**: extract/camels_ch_clc.R
+**Code used**: landcover_attributes/camels_ch_clc.R and landcover_attributes/camels_ch_annual_timeserie.R
 
 **Instructions**:
 1. Get clc data from copernicus server
