@@ -150,7 +150,7 @@ The following conventions have been defined for the resulting files:
 * evolution table from sig link from matthias.huss@unifr.ch
 * evolution table from gi link from sibylle.wilhelm@giub.unibe.ch
 
-**Code used**: extract/camels_ch_glacier.R
+**Code used**: glacier_attributes/camels_ch_glacier.R
 
 **Instructions**:
 1. Get shape files from Glamos and GLIMS -> Link
