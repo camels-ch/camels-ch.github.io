@@ -33,7 +33,7 @@ The following conventions have been defined for the resulting files:
 * Encoding: UTF-8
 * End of line: Unix (LF)
 
-## CAMELS_CH_topographic_attributes
+## Location and topography
 
 ### Gauge data
 
@@ -66,7 +66,7 @@ The following conventions have been defined for the resulting files:
 
 **Contributors**: ...
 
-## CAMELS_CH_climatic_attributes
+## Climate
 **Attributes**: "gauge_ID", "sign_start_date", "sign_end_date", "sign_number_of_years", "p_mean", "pet_mean", "aridity", "p_seasonality", "frac_snow", "high_prec_freq" ,"high_prec_dur", "high_prec_timing", "low_prec_freq", "low_prec_dur", "low_prec_timing" 
 
 **Versions**: Climatic indices are calculated based on i) observed data, and ii) simulated data.
@@ -84,7 +84,7 @@ The following conventions have been defined for the resulting files:
 
 **Contributors**: ...
 
-## CAMELS_CH_hydrologic_attributes
+## Hydrology
 
 **Attributes**: "gauge_ID","sign_start_date","sign_end_date","sign_number_of_years","q_mean","runoff_ratio","stream_elas","slope_fdc","baseflow_index_landson" "hfd_mean","Q5","Q95","high_q_freq","high_q_dur","low_q_freq","low_q_dur","zero_q_freq"
 
@@ -104,7 +104,7 @@ The following conventions have been defined for the resulting files:
 **Contributors**: ...
 
 
-## CAMELS_CH_soil_attributes
+## Soil
 
 **Attributes**: 
 
@@ -121,7 +121,7 @@ The following conventions have been defined for the resulting files:
 **Contributors**: Martina Kauzlaric
 
 
-## CAMELS_CH_hydrogeology_attributes
+## Hydrogeology
 
 **Attributes**: gauge_id, hygeol_unconsol_coarse_perc, hygeol_unconsol_medium_perc, hygeol_unconsol_fine_perc, hygeol_unconsol_imperm_perc, hygeol_karst_perc, hygeol_hardrock_perc, hygeol_hardrock_imperm_perc, hygeol_water_perc, hygeol_external_perc
 
@@ -148,7 +148,7 @@ The following conventions have been defined for the resulting files:
 
 **Contributors**: Daniel Viviroli, Ursula Schoenenberger, Martina Kauzlaric
 
-## CAMELS_CH_geology_attributes
+## Geology
 
 **Attributes**: 
 
@@ -165,7 +165,7 @@ The following conventions have been defined for the resulting files:
 **Contributors**: 
 
 
-## CAMELS_CH_glacier_attributes
+## Glacier
 
 **Attributes**: gauge_id, glac_area, glac_vol, glac_mass, glac_area_neighbours
 
@@ -194,7 +194,7 @@ The following conventions have been defined for the resulting files:
 **Contributors**: Marvin Höge, Ursula Schoenenberger, Sibylle Wilhelm, Matthias Huss
 
 
-## CAMELS_CH_landcover_attributes
+## Land cover
 
 **Attributes**:gauge_id,crop_perc,ewood_perc,dwood_perc,grass_perc,ice_perc,inwater_perc,loose_rock_perc,mix_wood_perc,rock_perc,shrub_perc,urban_perc,wetlands_perc,blank_perc 
 
@@ -261,7 +261,7 @@ The following conventions have been defined for the resulting files:
 
 **Contributors**: Ursula Schoenenberger, Jan Schwanbeck
 
-## CAMELS_CH_human_impact_attributes
+## Human impact
 
 **Attributes**: gauge_id, n_inhabitants, dens_inhabitants, hp_count, hp_qturb, hp_inst_turb, hp_max_power, num_reservoir, reservoir_cap, reservoir_he, reservoir_fs, reservoir_irr, reservoir_nousedata, reservoir_year_first, reservoir_year_last
 
