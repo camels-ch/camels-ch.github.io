@@ -106,6 +106,20 @@ The following conventions have been defined for the resulting files:
 
 ## CAMELS_CH_soil_attributes
 
+**Attributes**: 
+
+**Source data**:
+* ...
+
+**Code used**: 
+* ...
+
+**Instructions**:
+1. ...
+2. ...
+
+**Contributors**: Martina Kauzlaric
+
 
 ## CAMELS_CH_hydrogeology_attributes
 
