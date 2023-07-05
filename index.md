@@ -15,7 +15,7 @@ The purpose of this guide is to describe the creation of the CAMELS-CH dataset f
 - [CAMELS_CH_soil_attributes](#camels_ch_soil_attributes)
 - [CAMELS_CH_hydrogeology_attributes](#camels_ch_hydrogeology_attributes)
 - [CAMELS_CH_geology_attributes](#camels_ch_geology_attributes)
-- [CAMELS_CH_human_influence_attributes](#camels_ch_human_influence_attributes)
+- [CAMELS_CH_human_impact_attributes](#camels_ch_human_impact_attributes)
 - [CAMELS_CH_glaciers_attributes](#camels_ch_glaciers_attributes)
 <!-- TOC end -->
 
@@ -261,7 +261,7 @@ The following conventions have been defined for the resulting files:
 
 **Contributors**: Ursula Schoenenberger, Jan Schwanbeck
 
-## CAMELS_CH_human_influence_attributes
+## CAMELS_CH_human_impact_attributes
 
 **Attributes**: gauge_id, n_inhabitants, dens_inhabitants, hp_count, hp_qturb, hp_inst_turb, hp_max_power, num_reservoir, reservoir_cap, reservoir_he, reservoir_fs, reservoir_irr, reservoir_nousedata, reservoir_year_first, reservoir_year_last
 
