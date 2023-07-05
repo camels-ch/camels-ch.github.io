@@ -6,17 +6,15 @@ The purpose of this guide is to describe the creation of the CAMELS-CH dataset f
 
 <!-- TOC start -->
 - [Conventions on file content](#conventions-on-file-content)
-- [CAMELS_CH_topographic_attributes](#camels_ch_topographic_attributes)
-  * [Gauge data](#gauge-data)
-  * [Catchment properties](#catchment-properties)
-- [CAMELS_CH_climatic_attributes](#camels_ch_climatic_attributes)
-- [CAMELS_CH_hydrologic_attributes](#camels_ch_hydrologic_attributes)
-- [CAMELS_CH_landcover_attributes](#camels_ch_landcover_attributes)
-- [CAMELS_CH_soil_attributes](#camels_ch_soil_attributes)
-- [CAMELS_CH_hydrogeology_attributes](#camels_ch_hydrogeology_attributes)
-- [CAMELS_CH_geology_attributes](#camels_ch_geology_attributes)
-- [CAMELS_CH_human_impact_attributes](#camels_ch_human_impact_attributes)
-- [CAMELS_CH_glaciers_attributes](#camels_ch_glaciers_attributes)
+- [Location and topography](#Location-and-topography)
+- [Climate](#Climate)
+- [Hydrology](#Hydrology)
+- [Soil](#Soil)
+- [Hydrogeology](#Hydrogeology)
+- [Geology](#Geology)
+- [Glacier](#Glacier)
+- [Land cover](#Land-cover)
+- [Human impact](#Human-impact)
 <!-- TOC end -->
 
 ## Conventions on file content
