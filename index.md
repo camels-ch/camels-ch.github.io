@@ -57,7 +57,8 @@ The following conventions have been defined for the resulting files:
 * Main data source: Catchement shapefiles provided by BAFU
 * Complemented with the EU-Hydro river network database (https://land.copernicus.eu/imagery-in-situ/eu-hydro)
 
-**Code used**: ...
+**Code used**: 
+* ...
 
 **Instructions**:
 1. ...
@@ -74,7 +75,8 @@ The following conventions have been defined for the resulting files:
 * Observed data: Temperature and precipitation time series are from MeteoSwiss, and potential evapotranspiration time series are from Prevah (and thus simulated). The observation-based climatic indices were calculated for the same time period as the observation-based hydrological signatures to ease comparison.
 * Simulated data: Streamflow time series are from Prevah simulations. The simulation-based climatic indices were calculated for the same time period as the simulation-based hydrological signatures to ease comparison.
 
-**Code used**: https://github.com/camels-ch/camels/blob/ch-specific/compute/climate_indices.R
+**Code used**: 
+* hydro_climate_attributes/climate_indices.R
 
 **Instructions**:
 * Note: Only years with complete hydrological year are used (5% missing values are tolerated per hydrological year).
@@ -92,7 +94,8 @@ The following conventions have been defined for the resulting files:
 * Observed data: Streamflow time series provided by BAFU. The length of the observed time series varies among catchments.
 * Simulated data: Streamflow time series are from Prevah simulations. The simulated time series is identical for all catchments and lasts from 1981-10-01 to 2020-09-30.
 
-**Code used**: https://github.com/camels-ch/camels/blob/ch-specific/compute/hydro_signatures.R
+**Code used**: 
+* hydro_climate_attributes/hydro_signatures.R
 
 **Instructions**:
 * Note: Only years with complete hydrological year are used (5% missing values are tolerated per hydrological year).
@@ -122,6 +125,8 @@ The following conventions have been defined for the resulting files:
 * [Hydrogeologische Karte der Schweiz: Grundwasservorkommen 1:500000](https://data.geo.admin.ch/ch.swisstopo.geologie-hydrogeologische_karte-grundwasservorkommen), reclassified according to [Viviroli (2007)](https://boris.unibe.ch/165989) and [Viviroli et al. (2009)](https://dx.doi.org/10.1016/j.jhydrol.2009.08.022)
 
 **Code used**: 
+* hydrogeologic_attributes/extract_hydrogeol_CH.R
+* hydrogeologic_attributes/produce_hydrogeol_CH.R
 
 **Instructions**:
 1. Get source data from data.geo.admin.ch (last accessed 18.03.2022)
@@ -150,7 +155,8 @@ The following conventions have been defined for the resulting files:
 * evolution table from sig link from matthias.huss@unifr.ch
 * evolution table from gi link from sibylle.wilhelm@giub.unibe.ch
 
-**Code used**: glacier_attributes/camels_ch_glacier.R
+**Code used**: 
+* glacier_attributes/produce_glaciers_CH.R
 
 **Instructions**:
 1. Get shape files from Glamos and GLIMS -> Link
@@ -217,7 +223,9 @@ The following conventions have been defined for the resulting files:
 * clc_code: 990, 	clc_LABEL3: UNCLASSIFIED LAND SURFACE, 	camels_ch_attribute: inwater
 * clc_code: 995, 	clc_LABEL3: UNCLASSIFIED WATER BODIES, 	camels_ch_attribute: inwater
 
-**Code used**: landcover_attributes/camels_ch_clc.R and landcover_attributes/camels_ch_annual_timeserie.R
+**Code used**: 
+* landcover_attributes/corine_landcover_CH.R
+* landcover_attributes/annual_timeserie_CH.R
 
 **Instructions**:
 1. Get clc data from copernicus server
@@ -249,7 +257,8 @@ The following conventions have been defined for the resulting files:
 **Source data**:
 * Reservoir information from the Swiss Federal Office of Energy SFOE. For more details see: https://www.bfe.admin.ch/bfe/de/home/versorgung/statistik-und-geodaten/geoinformation/geodaten/wasser/stauanlagen-unter-bundesaufsicht.html. 
 
-**Code used**: extract/camels_ch_reservoirs.R
+**Code used**: 
+* human_impact_attributes/produce_reservoirs_CH.R
 
 **Instructions**:
 1. Get reservoir data from SFOE
