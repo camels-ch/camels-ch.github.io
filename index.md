@@ -15,7 +15,7 @@ The purpose of this guide is to describe the creation of the CAMELS-CH dataset f
 - [CAMELS_CH_soil_attributes](#camels_ch_soil_attributes)
 - [CAMELS_CH_hydrogeology_attributes](#camels_ch_hydrogeology_attributes)
 - [CAMELS_CH_geology_attributes](#camels_ch_geology_attributes)
-- [CAMELS_CH_humaninfluence_attributes](#camels_ch_humaninfluence_attributes)
+- [CAMELS_CH_human_influence_attributes](#camels_ch_humaninfluence_attributes)
 - [CAMELS_CH_glaciers_attributes](#camels_ch_glaciers_attributes)
 <!-- TOC end -->
 
