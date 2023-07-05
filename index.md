@@ -150,6 +150,20 @@ The following conventions have been defined for the resulting files:
 
 ## CAMELS_CH_geology_attributes
 
+**Attributes**: 
+
+**Source data**:
+* ...
+
+**Code used**: 
+* ...
+
+**Instructions**:
+1. ...
+2. ...
+
+**Contributors**: 
+
 
 ## CAMELS_CH_glacier_attributes
 
@@ -178,7 +192,6 @@ The following conventions have been defined for the resulting files:
 3. Use code provided in camels_ch_glacier_aggregation.R to compute the different attributes
 
 **Contributors**: Marvin Höge, Ursula Schoenenberger, Sibylle Wilhelm, Matthias Huss
-
 
 
 ## CAMELS_CH_landcover_attributes
@@ -248,7 +261,7 @@ The following conventions have been defined for the resulting files:
 
 **Contributors**: Ursula Schoenenberger, Jan Schwanbeck
 
-## CAMELS_CH_humaninfluence_attributes
+## CAMELS_CH_human_influence_attributes
 
 **Attributes**: gauge_id, n_inhabitants, dens_inhabitants, hp_count, hp_qturb, hp_inst_turb, hp_max_power, num_reservoir, reservoir_cap, reservoir_he, reservoir_fs, reservoir_irr, reservoir_nousedata, reservoir_year_first, reservoir_year_last
 
