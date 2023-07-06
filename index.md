@@ -39,7 +39,7 @@ The following conventions have been defined for the resulting files:
 * Elevation and slope: European Digital Elevation Model (EU-DEM), version 1.1: https://land.copernicus.eu/imagery-in-situ/eu-dem/eu-dem-v1.1?tab=download&selected:list=dem-v1-1-e40n20
 
 **Instructions**:
-* COmputation of the mean and percentiles of the elevation: In ArcGIS Pro Spatial Analyst Tools: ZonalStatistics as Table (mean; percentile_values=[10,25,50,75,90])
+* Computation of the mean and percentiles of the elevation: In ArcGIS Pro Spatial Analyst Tools: ZonalStatistics as Table (mean; percentile_values=[10,25,50,75,90])
 
 **Contributors**: Rosi Siber
 
