@@ -36,10 +36,10 @@ The following conventions have been defined for the resulting files:
 **Source data**:
 * Main data source: Gauge properties and catchement shapefiles provided by BAFU
 * Complemented with the EU-Hydro river network database (https://land.copernicus.eu/imagery-in-situ/eu-hydro)
+* Elevation and slope: European Digital Elevation Model (EU-DEM), version 1.1: https://land.copernicus.eu/imagery-in-situ/eu-dem/eu-dem-v1.1?tab=download&selected:list=dem-v1-1-e40n20
 
 **Instructions**:
-1. ...
-2. ...
+* COmputation of the mean and percentiles of the elevation: In ArcGIS Pro Spatial Analyst Tools: ZonalStatistics as Table (mean; percentile_values=[10,25,50,75,90])
 
 **Contributors**: Rosi Siber
 
