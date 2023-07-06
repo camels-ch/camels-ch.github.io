@@ -35,8 +35,6 @@ The following conventions have been defined for the resulting files:
 
 ### Gauge data
 
-**Attributes**: gauge_id, gauge_name, gauge_lat, gauge_lon, gauge_easting, gauge_northing, gauge_elev
-
 **Source data**:
 * Main data source: BAFU gauge properties
 * Complemented with the EU-Hydro river network database (https://land.copernicus.eu/imagery-in-situ/eu-hydro)
@@ -48,8 +46,6 @@ The following conventions have been defined for the resulting files:
 **Contributors**: ...
 
 ### Catchment properties
-
-**Attributes**: area, dpsbar, elev_mean, elev_min, elev_10, elev_50, elev_90, elev_max
 
 **Source data**:
 * Main data source: Catchement shapefiles provided by BAFU
@@ -65,7 +61,6 @@ The following conventions have been defined for the resulting files:
 **Contributors**: ...
 
 ## Climate
-**Attributes**: "gauge_ID", "sign_start_date", "sign_end_date", "sign_number_of_years", "p_mean", "pet_mean", "aridity", "p_seasonality", "frac_snow", "high_prec_freq" ,"high_prec_dur", "high_prec_timing", "low_prec_freq", "low_prec_dur", "low_prec_timing" 
 
 **Versions**: Climatic indices are calculated based on i) observed data, and ii) simulated data.
 
@@ -83,8 +78,6 @@ The following conventions have been defined for the resulting files:
 **Contributors**: ...
 
 ## Hydrology
-
-**Attributes**: "gauge_ID","sign_start_date","sign_end_date","sign_number_of_years","q_mean","runoff_ratio","stream_elas","slope_fdc","baseflow_index_landson" "hfd_mean","Q5","Q95","high_q_freq","high_q_dur","low_q_freq","low_q_dur","zero_q_freq"
 
 **Versions**: Hydrological signatures are calculated based on i) observed data, and ii) simulated data.
 
@@ -104,8 +97,6 @@ The following conventions have been defined for the resulting files:
 
 ## Soil
 
-**Attributes**: 
-
 **Source data**:
 * ...
 
@@ -121,8 +112,7 @@ The following conventions have been defined for the resulting files:
 
 ## Hydrogeology
 
-**Attributes**: gauge_id, hygeol_unconsol_coarse_perc, hygeol_unconsol_medium_perc, hygeol_unconsol_fine_perc, hygeol_unconsol_imperm_perc, hygeol_karst_perc, hygeol_hardrock_perc, hygeol_hardrock_imperm_perc, hygeol_water_perc, hygeol_external_perc
-
+**Attributes description**:
 * hygeol_unconsol_coarse_perc: unconsolidated 1 (well-permeable gravel in valley bottoms)
 * hygeol_unconsol_medium_perc: unconsolidated 2 (permeable gravel outside of valley bottoms, sandy gravel, medium- to coarse-grained gravel)
 * hygeol_unconsol_fine_perc: unconsolidated 3 (loamy gravel, fine- to medium-grained debris, moraines)
@@ -148,8 +138,6 @@ The following conventions have been defined for the resulting files:
 
 ## Geology
 
-**Attributes**: 
-
 **Source data**:
 * ...
 
@@ -165,8 +153,7 @@ The following conventions have been defined for the resulting files:
 
 ## Glacier
 
-**Attributes**: gauge_id, glac_area, glac_vol, glac_mass, glac_area_neighbours
-
+**Attributes description**:
 * gauge_id: CAMELS-CH gauge ID
 * glac_area: glacier area (km2) in Switzerland, evolution per catchment between 1980 and 2021
 * glac_vol: glacier volume (km3) in Switzerland, evolution per catchment between 1980 and 2021
@@ -193,8 +180,6 @@ The following conventions have been defined for the resulting files:
 
 
 ## Land cover
-
-**Attributes**:gauge_id,crop_perc,ewood_perc,dwood_perc,grass_perc,ice_perc,inwater_perc,loose_rock_perc,mix_wood_perc,rock_perc,shrub_perc,urban_perc,wetlands_perc,blank_perc 
 
 **Source data**:
 * clc 1990, clc 2000, clc 2006, clc 2012 and clc 2018 on copernicus server: https://land.copernicus.eu/pan-european/corine-land-cover
@@ -261,8 +246,7 @@ The following conventions have been defined for the resulting files:
 
 ## Human impact
 
-**Attributes**: gauge_id, n_inhabitants, dens_inhabitants, hp_count, hp_qturb, hp_inst_turb, hp_max_power, num_reservoir, reservoir_cap, reservoir_he, reservoir_fs, reservoir_irr, reservoir_nousedata, reservoir_year_first, reservoir_year_last
-
+**Attributes description**: 
 * gauge_id: CAMELS-CH gauge ID
 * n_inhabitants: number of inhabitants
 * dens_inhabitants: density of inhabitants
