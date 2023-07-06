@@ -6,15 +6,15 @@ The purpose of this guide is to describe the creation of the CAMELS-CH dataset f
 
 <!-- TOC start -->
 - [Conventions on file content](#conventions-on-file-content)
-- [Location and topography](#Location-and-topography)
-- [Climate](#Climate)
-- [Hydrology](#Hydrology)
-- [Soil](#Soil)
-- [Hydrogeology](#Hydrogeology)
-- [Geology](#Geology)
-- [Glacier](#Glacier)
-- [Land cover](#Land-cover)
-- [Human impact](#Human-impact)
+- [Location and topography](#location-and-topography)
+- [Climate](#climate)
+- [Hydrology](#hydrology)
+- [Soil](#soil)
+- [Hydrogeology](#hydrogeology)
+- [Geology](#geology)
+- [Glacier](#glacier)
+- [Land cover](#land-cover)
+- [Human impact](#human-impact)
 <!-- TOC end -->
 
 ## Conventions on file content
