@@ -33,32 +33,15 @@ The following conventions have been defined for the resulting files:
 
 ## Location and topography
 
-### Gauge data
-
 **Source data**:
-* Main data source: BAFU gauge properties
+* Main data source: Gauge properties and catchement shapefiles provided by BAFU
 * Complemented with the EU-Hydro river network database (https://land.copernicus.eu/imagery-in-situ/eu-hydro)
 
 **Instructions**:
 1. ...
 2. ...
 
-**Contributors**: ...
-
-### Catchment properties
-
-**Source data**:
-* Main data source: Catchement shapefiles provided by BAFU
-* Complemented with the EU-Hydro river network database (https://land.copernicus.eu/imagery-in-situ/eu-hydro)
-
-**Code used**: 
-* ...
-
-**Instructions**:
-1. ...
-2. ...
-
-**Contributors**: ...
+**Contributors**: Rosi Siber
 
 ## Climate
 
