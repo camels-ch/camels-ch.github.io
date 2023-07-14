@@ -58,7 +58,7 @@ The following conventions have been defined for the resulting files:
 * Note: Only years with complete hydrological year are used (5% missing values are tolerated per hydrological year).
 * Note: The variables "high_prec_timing" and "low_prec_timing" can have NA values if the number of high precipitation days or the number of low precipitation days is identical in multiple seasons.
 
-**Contributors**: ...
+**Contributors**: Sandra Pool, Marvin Höge
 
 ## Hydrology
 
@@ -75,7 +75,7 @@ The following conventions have been defined for the resulting files:
 * Note: Only years with complete hydrological year are used (5% missing values are tolerated per hydrological year).
 * Note: The variable "stream_elas" can have a value of NA if only one complete hydrological year is available.
 
-**Contributors**: ...
+**Contributors**: Sandra Pool, Marvin Höge
 
 
 ## Soil
@@ -131,7 +131,7 @@ The following conventions have been defined for the resulting files:
 1. ...
 2. ...
 
-**Contributors**: 
+**Contributors**: Marius Floriancic
 
 
 ## Glacier
