@@ -81,8 +81,9 @@ The following conventions have been defined for the resulting files:
 ## Soil
 
 **Attributes description**:
+
 From SoilGrid we get
--------------------------
+
 for 7 layers resp. depths (0 cm,5 cm,15 cm,30 cm,60 cm,100 cm,200 cm)
 * sand percentage[%]  <=> Weight percentage of the sand particles (0.05-2 mm) SNDPPT [%]
 * silt percentage [%]  <=> Weight percentage of the silt particles (0.0002-0.05 mm) SLTPPT [%]
@@ -90,7 +91,7 @@ for 7 layers resp. depths (0 cm,5 cm,15 cm,30 cm,60 cm,100 cm,200 cm)
 * percentage organic content [%]  <=> 	Soil organic carbon content ORCDRC [permille]/10
 * bulk density [g/cm3]  <=> bulk density BLDFIE [kg/m3]*1000
 * total available water content [mm]  <=> AWCh1 [%]/100*1000
- from AWCh1 [%] Available soil water capacity (volumetric fraction) with FC = pF 2.0
+From AWCh1 [%] Available soil water capacity (volumetric fraction) with FC = pF 2.0
 (see also [googlegroup SoilGrid AWCh1](https://groups.google.com/g/global-soil-information/c/NNwCT3mqXRM/m/vP-qjJpdBQAJ))
 Total available water (TAW) is defined as the difference between the water content at field capacity (FC) and at wilting point (WP)
 (FC = AWCH1 + WWP; see also [googlegroup SoilGrid FC](https://groups.google.com/g/global-soil-information/c/SMJzAXBhS08/m/Lc15MjMyBQAJ))
@@ -101,13 +102,13 @@ for the whole soil profile (1 layer)
 See also [FAQ SoilGrid](https://www.isric.org/explore/soilgrids/faq-soilgrids-2017) for more information (there are also more available data)
 
 From EU-SoilHydroGrids we get
--------------------------------
+
 For 7 layers resp. depths (0 cm,5 cm,15 cm,30 cm,60 cm,100 cm,200 cm)
 * porosity [-] <=> saturated volumetric water content THS [cm3/cm3] *100 / 100 
 * conductivity [cm/h] <=> saturated hydraulic conductivity KS [cm/day] *100 /(100*24)
 
 From European Soil Database Derived data we get
--------------------------------------------------
+
 For topsoil(T; first 30 cm) and subsoil(S; root depth-30cm)
 * sand percentage[%]  <=> Sand content STU_EU_T&S_SAND [%]
 * silt percentage [%]  <=> Sand content STU_EU_T&S_SILT [%]
