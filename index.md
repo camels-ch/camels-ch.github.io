@@ -80,15 +80,60 @@ The following conventions have been defined for the resulting files:
 
 ## Soil
 
+**Attributes description**:
+From SoilGrid we get
+-------------------------
+#@for 7 layers resp. depths (0 cm,5 cm,15 cm,30 cm,60 cm,100 cm,200 cm)
+# *sand percentage[%]  <=> Weight percentage of the sand particles (0.05-2 mm) SNDPPT [%]
+# *silt percentage [%]  <=> Weight percentage of the silt particles (0.0002-0.05 mm) SLTPPT [%]
+# *clay percentage[%]  <=> Weight percentage of the clay particles (<0.0002 mm) CLYPPT [%]
+# *percentage organic content [%]  <=> 	Soil organic carbon content ORCDRC [permille]/10
+# *bulk density [g/cm3]  <=> bulk density BLDFIE [kg/m3]*1000
+# *total available water content [mm]  <=> AWCh1 [%]/100*1000
+#  AWCh1 [%] Available soil water capacity (volumetric fraction) with FC = pF 2.0
+#  (see also https://groups.google.com/g/global-soil-information/c/NNwCT3mqXRM/m/vP-qjJpdBQAJ)
+#  Total available water (TAW) is defined as the difference between the water content at field capacity (FC) and at wilting point (WP)
+#  (FC = AWCH1 + WWP; see also https://groups.google.com/g/global-soil-information/c/SMJzAXBhS08/m/Lc15MjMyBQAJ)
+#@for the whole soil profile (1 layer)
+# *soil depth [m] <=> absolute depth to bedrock BDTICM [cm]/10
+# *root depth [m] <=> depth to bedrock (R horizon) up to 200cm BDRICM [cm]/10
+
+See also https://www.isric.org/explore/soilgrids/faq-soilgrids-2017 for more information (there are also more available data)
+
+From EU-SoilHydroGrids we get
+-------------------------------
+#@for 7 layers resp. depths (0 cm,5 cm,15 cm,30 cm,60 cm,100 cm,200 cm)
+# *porosity [-] <=> saturated volumetric water content THS [cm3/cm3] *100 / 100 
+# *conductivity [cm/h] <=> saturated hydraulic conductivity KS [cm/day] *100 /(100*24)
+
+From European Soil Database Derived data we get
+-------------------------------------------------
+#@for topsoil(T; first 30 cm) and subsoil(S; root depth-30cm)
+# *sand percentage[%]  <=> Sand content STU_EU_T&S_SAND [%]
+# *silt percentage [%]  <=> Sand content STU_EU_T&S_SILT [%]
+# *clay percentage[%]  <=> Sand content STU_EU_T&S_CLAY [%]
+# *percentage organic content [%]  <=> 	Organic carbon content STU_EU_T&S_OC [%]
+# *bulk density [g/cm3]  <=> bulk density STU_EU_T&S_BD [g/m3]
+# *total available water content [mm]  <=> Total available water content from PTF STU_EU_T&S_TAWC[mm]
+# *coarse fragments [%]  <=> Coarse fragments  STU_EU_T&S_GRAVEL [%]
+#@for the whole soil profile (1 layer)
+# *root depth [m] <=> depth available to roots STU_EU_DEPTH_ROOTS [cm]/100
+
+For Europe alternative data sources for some attributes can be found also here: 
+ [alternative EU data](https://esdac.jrc.ec.europa.eu/content/spade-14/)
+
 **Source data**:
-* ...
+* [SoilGrid](https://files.isric.org/soilgrids/former/2017-03-10/data/), refer also to [SoilGrid github](https://github.com/ISRICWorldSoil/SoilGrids250m); [ESSD](https://esdac.jrc.ec.europa.eu/content/european-soil-database-derived-data)
 
 **Code used**: 
-* ...
+* soil_attributes/extract_soildata_EU.R
+* soil_attributes/produce_soildata_EU.R
 
 **Instructions**:
-1. ...
-2. ...
+1. Either download manually data from [SoilGrid](https://files.isric.org/soilgrids/former/2017-03-10/data/), or download data using WCS from [SoilGrids WCS](https://soilgrids.org/). See [Tutorial SoilGrids WCS](https://git.wur.nl/isric/soilgrids/soilgrids.notebooks/-/blob/master/markdown/wcs_from_R.md) for a tutorial. Save data in Sys.getenv('CAMELS_DIR_DATA')/Soil/SoilData/SoilGrid/data.
+2. Submit a request and get data of the 3D soil hydraulic database of Europe under [EU-SoilHydroGrids](https://esdac.jrc.ec.europa.eu/content/3d-soil-hydraulic-database-europe-1-km-and-250-m-resolution). Save data in Sys.getenv('CAMELS_DIR_DATA')/SoilData/EU_SoilHydroGrids_250m and/or Sys.getenv('CAMELS_DIR_DATA')/SoilData/EU_SoilHydroGrids_1km.
+3. Submit a request and get data of the European Soil Database Derived data under [ESSD](https://esdac.jrc.ec.europa.eu/content/european-soil-database-derived-data). Save data in Sys.getenv('CAMELS_DIR_DATA')/Soil/SoilData/STU_EU_Layers.
+4. You are all done to run the code!
 
 **Contributors**: Martina Kauzlaric
 
@@ -114,10 +159,32 @@ The following conventions have been defined for the resulting files:
 * hydrogeologic_attributes/produce_hydrogeol_CH.R
 
 **Instructions**:
-1. Get source data from data.geo.admin.ch (last accessed 18.03.2022)
-2. 
+1. Download manually either from [GeoMaps 500 Vector](https://www.swisstopo.admin.ch/en/geodata/geology/maps/gk500/vector.html) for V1_2 as vector data, or both vectorised and raster data v1_3 from [Hydrogeologische Karte der Schweiz: Grundwasservorkommen 1:500000](https://data.geo.admin.ch/ch.swisstopo.geologie-hydrogeologische_karte-grundwasservorkommen/)
+2. Save data in Sys.getenv('CAMELS_DIR_DATA')/Hydrogeology/GK500_V1_3_DE. You find the data you need in the subdirectory LV95/Shapes_LV95 => shapefile PY_Basis_Flaechen.shp. In this shapefile the relevant field for defining hydrogeological properties is H2_ID it contains information on the groundwater resources: the aquifer, the hydrogeology and the productivity
+3. We reclassify here this field as follows:
+ H2_ID   ATTRIBUTE NAME                DESCRIPTION AND DETAILS
+ 0       hygeol_null_perc              not defined --> polygons without defined hydrogeology
+ 1,2     hygeol_unconsol_coarse_perc   unconsolidated coarse-grained material --> well-permeable gravel in valley bottoms
+ 3       hygeol_unconsol_medium_perc   unconsolidated medium-grained material --> permeable gravel outside of valley bottoms,
+                                                                                  sandy gravel,medium- to coarse-grained gravel
+ 4,5     hygeol_unconsol_fine_perc     unconsolidated fine-grained material --> loamy gravel, fine- to medium-grained debris, moraines
+ 6       hygeol_unconsol_imperm_perc   impermeable, unconsolidated material --> clay, silt, fine sands and loamy moraines
+ 8       hygeol_karst_perc             karstic rock --> carbonate rock: limestone, dolomite, rauhwacke;
+                                                         sulphate-containing rock: gypsum, anhydrite
+ 9,10    hygeol_hardrock_perc          hard rock --> fissured and porous, non-karstic hard rock: conglomerates,
+                                                     sandstone, limestone with marl layers; crystalline rock: granite,
+                                                     granodiorites, tonalite.
+ 11      hygeol_hardrock_imperm_perc   impermeable hard rock --> marl, shale, gneiss and cemented sandstone
+ 98,99   hygeol_water_perc             water --> glaciers, firn, surface waters
+   
+ Please refer also to table A1 in Appendix A for the corresponding classes in CAMELS-GB.
+ 
+ 4. For the area missing in Germany: download manually from [Hydrogeological Map of Germany 1:250'000](https://gdk.gdi-de.org/geonetwork/srv/api/records/61ac4628-6b62-48c6-89b8-46270819f0d6).
+    For a procuct description see [prod. descr. Hydrogeo. Map DE](https://www.bgr.bund.de/DE/Themen/Wasser/Projekte/laufend/Beratung/Huek200/huek200_projektbeschr.html)
+ 5. Save data in Sys.getenv('CAMELS_DIR_DATA')/Hydrogeology/Karst/huek250_v103. You find the data you need in the subdirectory shp: shapefile huek250__25832_v103_poly.shp
+ 6. You are all done to run the code!
 
-**Contributors**: Daniel Viviroli, Ursula Schoenenberger, Martina Kauzlaric
+**Contributors**: Martina Kauzlaric, Ursula Schoenenberger, Daniel Viviroli
 
 ## Geology
 
